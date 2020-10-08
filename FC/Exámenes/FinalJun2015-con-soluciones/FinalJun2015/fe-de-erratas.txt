@@ -1,0 +1,1 @@
+En el apartado a4 del ejercicio P2, la respuesta correcta NO es 0x80483dc, sino 0x080483dc-56 = 0x080483a4.
