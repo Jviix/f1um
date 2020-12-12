@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Pantalla: Fichero Fuente Pantalla.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Pantalla
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Pantalla.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_pantalla_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __Pantalla_H__</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __Pantalla_H__</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;SDL2/SDL.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_pantalla_8h.html#a768e3409329f2389c63495f1a1684379">   38</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>ImagenRep *<a class="code" href="_pantalla_8h.html#a768e3409329f2389c63495f1a1684379">Imagen</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#ab14a864aee7434a4a1afb6317b08a9c6">Pantalla_Crea</a>(<span class="keywordtype">char</span> *titulo, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#aab1d30780f6f814e110aaa45e1ab9e93">Pantalla_Libera</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_pantalla_8h.html#ace62d9910e4768afc08f2a4b7fc9f60f">Pantalla_Anchura</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_pantalla_8h.html#ac26c296f27945c0fd7b81ff91f54a317">Pantalla_Altura</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_pantalla_8h.html#a19c2511cb80edbbca98085aa2654e03d">Pantalla_Activa</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a4e9a4ed117b616a16c9973a1df38ced9">Pantalla_Espera</a>(<span class="keywordtype">int</span> ms);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a4b8d43981074eecab7140f8e2212009f">Pantalla_Actualiza</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_pantalla_8h.html#a7550aa56314abe307597eebcfc188f23">Pantalla_TeclaPulsada</a>(SDL_Scancode scancode);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a587e3f271dd5bdee42b32a2ea8f1c15b">Pantalla_ColorTrazo</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> a);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a177e363e1c1abdb794fece95e8fa746c">Pantalla_ColorRelleno</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> a);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a1e3dc6e209fa2494d4b865f24c606daa">Pantalla_DibujaRellenoFondo</a>(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> g, <span class="keywordtype">int</span> b, <span class="keywordtype">int</span> a);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a41068e714b4102c5418cd56487778fa9">Pantalla_DibujaPunto</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a6e49d1d508c989ee42567b0228dbedd0">Pantalla_DibujaLinea</a>(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#af3063ca14b6500234b16319cdcc03085">Pantalla_DibujaTriangulo</a>(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1, <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2, <span class="keywordtype">double</span> x3, <span class="keywordtype">double</span> y3);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a4de80357cc643bab2e43564af82250e0">Pantalla_DibujaRectangulo</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> w, <span class="keywordtype">double</span> h);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#af9502a48d38a4d1ffecbc65787f01b9a">Pantalla_DibujaCirculo</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> r);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a5a0c0aceeef2f9e904f4961b0e212684">Pantalla_DibujaTexto</a>(<span class="keywordtype">char</span> *st, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="_pantalla_8h.html#aa8fed07cc108a80658943fe2433b97fc">Pantalla_LeeTexto</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> max, <span class="keywordtype">char</span> * titulo);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<a class="code" href="_pantalla_8h.html#a768e3409329f2389c63495f1a1684379">Imagen</a> <a class="code" href="_pantalla_8h.html#a5aeff22ba48b62a3673a4e11420a7f03">Pantalla_ImagenLee</a>(<span class="keywordtype">char</span> * fichero, <span class="keywordtype">int</span> transparencia);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a7dbc0d2aed3abe64c95b2acdb7569eb1">Pantalla_DibujaImagen</a>(<a class="code" href="_pantalla_8h.html#a768e3409329f2389c63495f1a1684379">Imagen</a> imagen, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> w, <span class="keywordtype">double</span> h);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#ac152ff1ebb4f6f0d8da5935f6250f4e2">Pantalla_DibujaImagenTransformada</a>(<a class="code" href="_pantalla_8h.html#a768e3409329f2389c63495f1a1684379">Imagen</a> imagen, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> w, <span class="keywordtype">double</span> h, <span class="keywordtype">double</span> angulo, SDL_RendererFlip volteo);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keywordtype">double</span> <a class="code" href="_pantalla_8h.html#a3fbebf06e6918b331700eaf7a4646def">Pantalla_ImagenAnchura</a>(<a class="code" href="_pantalla_8h.html#a768e3409329f2389c63495f1a1684379">Imagen</a> imagen);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keywordtype">double</span> <a class="code" href="_pantalla_8h.html#a8c42f6819b768c985bc53e87a14e8581">Pantalla_ImagenAltura</a>(<a class="code" href="_pantalla_8h.html#a768e3409329f2389c63495f1a1684379">Imagen</a> imagen);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#a24ced74774d795523ec3efc0a1d34699">Pantalla_ImagenLibera</a>(<a class="code" href="_pantalla_8h.html#a768e3409329f2389c63495f1a1684379">Imagen</a> imagen);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_pantalla_8h.html#a39ae9f1e619495488bae063e565cf35d">Pantalla_RatonBotonPulsado</a>(<span class="keywordtype">int</span> boton);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_pantalla_8h.html#abda58082751ce17ea134e66984a33374">Pantalla_RatonCoordenadas</a>(<span class="keywordtype">double</span> * x, <span class="keywordtype">double</span> * y);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="_pantalla_8h_html_a6e49d1d508c989ee42567b0228dbedd0"><div class="ttname"><a href="_pantalla_8h.html#a6e49d1d508c989ee42567b0228dbedd0">Pantalla_DibujaLinea</a></div><div class="ttdeci">void Pantalla_DibujaLinea(double x1, double y1, double x2, double y2)</div><div class="ttdoc">Dibuja una línea utilizando el color de trazo. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a4de80357cc643bab2e43564af82250e0"><div class="ttname"><a href="_pantalla_8h.html#a4de80357cc643bab2e43564af82250e0">Pantalla_DibujaRectangulo</a></div><div class="ttdeci">void Pantalla_DibujaRectangulo(double x, double y, double w, double h)</div><div class="ttdoc">Dibuja un rectángulo utilizando el color de relleno y el color de trazo para el borde. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a587e3f271dd5bdee42b32a2ea8f1c15b"><div class="ttname"><a href="_pantalla_8h.html#a587e3f271dd5bdee42b32a2ea8f1c15b">Pantalla_ColorTrazo</a></div><div class="ttdeci">void Pantalla_ColorTrazo(int r, int g, int b, int a)</div><div class="ttdoc">Asigna el color de trazo que se usará al dibujar los bordes de las primitivas de dibujo. </div></div>
+<div class="ttc" id="_pantalla_8h_html_ab14a864aee7434a4a1afb6317b08a9c6"><div class="ttname"><a href="_pantalla_8h.html#ab14a864aee7434a4a1afb6317b08a9c6">Pantalla_Crea</a></div><div class="ttdeci">void Pantalla_Crea(char *titulo, int w, int h)</div><div class="ttdoc">Crea, configura y activa una ventana gráfica en donde aparecerá el resultado de las distintas primiti...</div></div>
+<div class="ttc" id="_pantalla_8h_html_aab1d30780f6f814e110aaa45e1ab9e93"><div class="ttname"><a href="_pantalla_8h.html#aab1d30780f6f814e110aaa45e1ab9e93">Pantalla_Libera</a></div><div class="ttdeci">void Pantalla_Libera()</div><div class="ttdoc">Libera la memoria reservada para la pantalla y sus recursos asociados. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a768e3409329f2389c63495f1a1684379"><div class="ttname"><a href="_pantalla_8h.html#a768e3409329f2389c63495f1a1684379">Imagen</a></div><div class="ttdeci">struct ImagenRep * Imagen</div><div class="ttdoc">TDA Imagen. </div><div class="ttdef"><b>Definition:</b> Pantalla.h:38</div></div>
+<div class="ttc" id="_pantalla_8h_html_a39ae9f1e619495488bae063e565cf35d"><div class="ttname"><a href="_pantalla_8h.html#a39ae9f1e619495488bae063e565cf35d">Pantalla_RatonBotonPulsado</a></div><div class="ttdeci">int Pantalla_RatonBotonPulsado(int boton)</div><div class="ttdoc">Indica si alguno de los botones del ratón está pulsado. </div></div>
+<div class="ttc" id="_pantalla_8h_html_af9502a48d38a4d1ffecbc65787f01b9a"><div class="ttname"><a href="_pantalla_8h.html#af9502a48d38a4d1ffecbc65787f01b9a">Pantalla_DibujaCirculo</a></div><div class="ttdeci">void Pantalla_DibujaCirculo(double x, double y, double r)</div><div class="ttdoc">Dibuja un círculo utilizando el color de relleno y el color de trazo para el borde. </div></div>
+<div class="ttc" id="_pantalla_8h_html_ac152ff1ebb4f6f0d8da5935f6250f4e2"><div class="ttname"><a href="_pantalla_8h.html#ac152ff1ebb4f6f0d8da5935f6250f4e2">Pantalla_DibujaImagenTransformada</a></div><div class="ttdeci">void Pantalla_DibujaImagenTransformada(Imagen imagen, double x, double y, double w, double h, double angulo, SDL_RendererFlip volteo)</div><div class="ttdoc">Dibuja una imagen en unas coordedenadas rotandola o volteandola a elección. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a41068e714b4102c5418cd56487778fa9"><div class="ttname"><a href="_pantalla_8h.html#a41068e714b4102c5418cd56487778fa9">Pantalla_DibujaPunto</a></div><div class="ttdeci">void Pantalla_DibujaPunto(double x, double y)</div><div class="ttdoc">Dibuja un punto utilizando el color de trazo. </div></div>
+<div class="ttc" id="_pantalla_8h_html_ace62d9910e4768afc08f2a4b7fc9f60f"><div class="ttname"><a href="_pantalla_8h.html#ace62d9910e4768afc08f2a4b7fc9f60f">Pantalla_Anchura</a></div><div class="ttdeci">int Pantalla_Anchura()</div><div class="ttdoc">Recupera la anchura de la pantalla. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a4e9a4ed117b616a16c9973a1df38ced9"><div class="ttname"><a href="_pantalla_8h.html#a4e9a4ed117b616a16c9973a1df38ced9">Pantalla_Espera</a></div><div class="ttdeci">void Pantalla_Espera(int ms)</div><div class="ttdoc">Detiene la ejecución un número de milisegundos determinado. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a4b8d43981074eecab7140f8e2212009f"><div class="ttname"><a href="_pantalla_8h.html#a4b8d43981074eecab7140f8e2212009f">Pantalla_Actualiza</a></div><div class="ttdeci">void Pantalla_Actualiza()</div><div class="ttdoc">Actualiza la ventana mostrando el resultado de las funciones de dibujo que se hayan ejecutado hasta e...</div></div>
+<div class="ttc" id="_pantalla_8h_html_abda58082751ce17ea134e66984a33374"><div class="ttname"><a href="_pantalla_8h.html#abda58082751ce17ea134e66984a33374">Pantalla_RatonCoordenadas</a></div><div class="ttdeci">void Pantalla_RatonCoordenadas(double *x, double *y)</div><div class="ttdoc">Obtiene las coordenadas del ratón en el momento actual. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a8c42f6819b768c985bc53e87a14e8581"><div class="ttname"><a href="_pantalla_8h.html#a8c42f6819b768c985bc53e87a14e8581">Pantalla_ImagenAltura</a></div><div class="ttdeci">double Pantalla_ImagenAltura(Imagen imagen)</div><div class="ttdoc">Recupera la altura de una imagen. </div></div>
+<div class="ttc" id="_pantalla_8h_html_aa8fed07cc108a80658943fe2433b97fc"><div class="ttname"><a href="_pantalla_8h.html#aa8fed07cc108a80658943fe2433b97fc">Pantalla_LeeTexto</a></div><div class="ttdeci">char * Pantalla_LeeTexto(int x, int y, int max, char *titulo)</div><div class="ttdoc">Muestra un rectángulo en el que se puede introducir texto. La introducción termina al pulsar ENTER y ...</div></div>
+<div class="ttc" id="_pantalla_8h_html_a3fbebf06e6918b331700eaf7a4646def"><div class="ttname"><a href="_pantalla_8h.html#a3fbebf06e6918b331700eaf7a4646def">Pantalla_ImagenAnchura</a></div><div class="ttdeci">double Pantalla_ImagenAnchura(Imagen imagen)</div><div class="ttdoc">Recupera la anchura de una imagen. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a1e3dc6e209fa2494d4b865f24c606daa"><div class="ttname"><a href="_pantalla_8h.html#a1e3dc6e209fa2494d4b865f24c606daa">Pantalla_DibujaRellenoFondo</a></div><div class="ttdeci">void Pantalla_DibujaRellenoFondo(int r, int g, int b, int a)</div><div class="ttdoc">Rellena la ventana con el color indicado borrando todo lo que haya en ese momento. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a5aeff22ba48b62a3673a4e11420a7f03"><div class="ttname"><a href="_pantalla_8h.html#a5aeff22ba48b62a3673a4e11420a7f03">Pantalla_ImagenLee</a></div><div class="ttdeci">Imagen Pantalla_ImagenLee(char *fichero, int transparencia)</div><div class="ttdoc">Carga en memoria una imagen guardada en un fichero. La imagen debe estar en formato Windows BMP 24 bi...</div></div>
+<div class="ttc" id="_pantalla_8h_html_a7dbc0d2aed3abe64c95b2acdb7569eb1"><div class="ttname"><a href="_pantalla_8h.html#a7dbc0d2aed3abe64c95b2acdb7569eb1">Pantalla_DibujaImagen</a></div><div class="ttdeci">void Pantalla_DibujaImagen(Imagen imagen, double x, double y, double w, double h)</div><div class="ttdoc">Dibuja una imagen previamente cargada en memoria con la función Pantalla_ImagenLee(). </div></div>
+<div class="ttc" id="_pantalla_8h_html_a5a0c0aceeef2f9e904f4961b0e212684"><div class="ttname"><a href="_pantalla_8h.html#a5a0c0aceeef2f9e904f4961b0e212684">Pantalla_DibujaTexto</a></div><div class="ttdeci">void Pantalla_DibujaTexto(char *st, double x, double y)</div><div class="ttdoc">Dibuja una cadena de texto en la ventana gráfica. El texto mostrado usa una fuente de paso fijo de 8 ...</div></div>
+<div class="ttc" id="_pantalla_8h_html_a19c2511cb80edbbca98085aa2654e03d"><div class="ttname"><a href="_pantalla_8h.html#a19c2511cb80edbbca98085aa2654e03d">Pantalla_Activa</a></div><div class="ttdeci">int Pantalla_Activa()</div><div class="ttdoc">Indica si la pantalla está activa o no. La pantalla deja de estar activa cuando el usuario la cierra...</div></div>
+<div class="ttc" id="_pantalla_8h_html_a24ced74774d795523ec3efc0a1d34699"><div class="ttname"><a href="_pantalla_8h.html#a24ced74774d795523ec3efc0a1d34699">Pantalla_ImagenLibera</a></div><div class="ttdeci">void Pantalla_ImagenLibera(Imagen imagen)</div><div class="ttdoc">Libera la memoria reservada para la imagen. </div></div>
+<div class="ttc" id="_pantalla_8h_html_af3063ca14b6500234b16319cdcc03085"><div class="ttname"><a href="_pantalla_8h.html#af3063ca14b6500234b16319cdcc03085">Pantalla_DibujaTriangulo</a></div><div class="ttdeci">void Pantalla_DibujaTriangulo(double x1, double y1, double x2, double y2, double x3, double y3)</div><div class="ttdoc">Dibuja un triangulo utilizando el color de relleno y el color de trazo para el borde. </div></div>
+<div class="ttc" id="_pantalla_8h_html_a177e363e1c1abdb794fece95e8fa746c"><div class="ttname"><a href="_pantalla_8h.html#a177e363e1c1abdb794fece95e8fa746c">Pantalla_ColorRelleno</a></div><div class="ttdeci">void Pantalla_ColorRelleno(int r, int g, int b, int a)</div><div class="ttdoc">Asigna el color de relleno que se usará al dibujar los bordes de las demás primitivas gráficas...</div></div>
+<div class="ttc" id="_pantalla_8h_html_a7550aa56314abe307597eebcfc188f23"><div class="ttname"><a href="_pantalla_8h.html#a7550aa56314abe307597eebcfc188f23">Pantalla_TeclaPulsada</a></div><div class="ttdeci">int Pantalla_TeclaPulsada(SDL_Scancode scancode)</div><div class="ttdoc">Indica si una tecla en concreto está pulsada. </div></div>
+<div class="ttc" id="_pantalla_8h_html_ac26c296f27945c0fd7b81ff91f54a317"><div class="ttname"><a href="_pantalla_8h.html#ac26c296f27945c0fd7b81ff91f54a317">Pantalla_Altura</a></div><div class="ttdeci">int Pantalla_Altura()</div><div class="ttdoc">Recupera la altura de la pantalla. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Viernes, 8 de Marzo de 2019 18:20:58 para Pantalla por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

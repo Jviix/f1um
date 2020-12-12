@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Pantalla: Pantalla</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Pantalla
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Pantalla </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>La biblioteca pantalla es un wrapper de la biblioteca SDL 2.0. Permite la escritura de programas gráficos interactivos sin necesidad de conocer muchos de los detalles de la visualización gráfica y de la programación dirigida por eventos típicos de SDL. Evidentemente, utilizando SDL directamente se pueden escribir programas más potentes y eficientes.</p>
+<p>El esquema básico para hacer una animación interactiva con esta biblioteca es el siguiente:<br />
+ <br />
+mientras ( <a class="el" href="_pantalla_8h.html#a19c2511cb80edbbca98085aa2654e03d" title="Indica si la pantalla está activa o no. La pantalla deja de estar activa cuando el usuario la cierra...">Pantalla_Activa( )</a> ) { <br />
+ &#160;&#160;&#160; Detectar los eventos que se hayan producido usando las funciones <a class="el" href="_pantalla_8h.html#a7550aa56314abe307597eebcfc188f23" title="Indica si una tecla en concreto está pulsada. ">Pantalla_TeclaPulsada()</a> o <a class="el" href="_pantalla_8h.html#a39ae9f1e619495488bae063e565cf35d" title="Indica si alguno de los botones del ratón está pulsado. ">Pantalla_RatonBotonPulsado()</a>. <br />
+ &#160;&#160;&#160; Modificar el estado de la animación en función de los evantos detectados. <br />
+ &#160;&#160;&#160; Componer el siguiente frame de la animación usando las funciones de dibujo: <a class="el" href="_pantalla_8h.html#a4de80357cc643bab2e43564af82250e0" title="Dibuja un rectángulo utilizando el color de relleno y el color de trazo para el borde. ">Pantalla_DibujaRectangulo()</a>, <a class="el" href="_pantalla_8h.html#af9502a48d38a4d1ffecbc65787f01b9a" title="Dibuja un círculo utilizando el color de relleno y el color de trazo para el borde. ">Pantalla_DibujaCirculo()</a>, <a class="el" href="_pantalla_8h.html#a7dbc0d2aed3abe64c95b2acdb7569eb1" title="Dibuja una imagen previamente cargada en memoria con la función Pantalla_ImagenLee(). ">Pantalla_DibujaImagen()</a>, etc. <br />
+ &#160;&#160;&#160; Mostrar el frame que se acaba de componer usando la función <a class="el" href="_pantalla_8h.html#a4b8d43981074eecab7140f8e2212009f" title="Actualiza la ventana mostrando el resultado de las funciones de dibujo que se hayan ejecutado hasta e...">Pantalla_Actualiza()</a>. <br />
+ &#160;&#160;&#160; Esperar unos milisegundos utilizando la función <a class="el" href="_pantalla_8h.html#a4e9a4ed117b616a16c9973a1df38ced9" title="Detiene la ejecución un número de milisegundos determinado. ">Pantalla_Espera()</a> (40 para conseguir unos 25fps) para que de tiempo al ojo humano a ver lo que ha pasado. <br />
+}</p>
+<p>Copyright © 2018 by Juan A. Sánchez Laguna, Fernando Jiménez Barrionuevo and Gracia Sánchez Carpena</p>
+<p>Permission to use, copy, modify, and distribute this software and its documentation under the terms of the GNU General Public License is hereby granted. No representations are made about the suitability of this software for any purpose. It is provided "as is" without express or implied warranty. See the <a href="https://www.gnu.org/licenses/gpl.txt">GNU General Public License</a> for more details. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Viernes, 8 de Marzo de 2019 18:20:58 para Pantalla por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>
