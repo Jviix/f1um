@@ -1,0 +1,75 @@
+--------------------- [URLs completos]
+
+http://ditec.um.es/~pedroe/documentos/prueba.html
+http://ditec.um.es/~pedroe/documentos/prueba-con-imagen.html
+http://ditec.um.es/~pedroe/documentos/logoum.jpg
+
+--------------------- [HTTP Request a ditec.um.es, devuelve 200 OK (página html)]
+
+GET /~pedroe/documentos/prueba.html HTTP/1.1
+Host: ditec.um.es
+Connection: close
+
+GET /~pedroe/documentos/prueba-con-imagen.html HTTP/1.1
+Host: ditec.um.es
+Connection: close
+
+--------------------- [HTTP Request a ditec.um.es, devuelve 200 OK (imagen)]
+
+GET /~pedroe/documentos/logoum.jpg HTTP/1.1
+Host: ditec.um.es
+Connection: close
+
+--------------------- [HTTP Request, devuelve 301 Moved Permanently]
+
+GET /~pedroe/documentos HTTP/1.1
+Host: ditec.um.es
+Connection: close
+
+--------------------- [HTTP Request, devuelve 403 Forbidden]
+
+GET /~pedroe/documentos/ HTTP/1.1
+Host: ditec.um.es
+Connection: close
+
+--------------------- [HTTP Request, devuelve 404 Not Found]
+
+GET /~pedroe/documentos/noexiste.html HTTP/1.1
+Host: ditec.um.es
+Connection: close
+
+--------------------- [HTTP Response, 200 OK]
+
+HTTP/1.1 200 OK
+Date: Tue, 15 Dec 2015 09:16:55 GMT
+Server: Apache/2.2.11 (Fedora)
+Last-Modified: Wed, 18 Dec 2013 10:27:15 GMT
+ETag: "7ec368-141-4edcc7d1ce6c0"
+Accept-Ranges: bytes
+Content-Length: 321
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<HTML>
+ <HEAD>
+  <TITLE>Ejemplo</TITLE>
+  <META NAME="AUTHOR" CONTENT="Fundamentos de Computadores">
+ </HEAD>
+ <BODY>
+  <P>Esta palabra est&aacute; en <B>negrita</B>.</P>
+  <P>Tambi&eacute;n la puedo poner en <I>cursiva</I>.</P>
+  <BR>
+  <P>Un <A HREF="http://www.um.es/">enlace</A> al Web de la UMU.</P>
+ </BODY>
+</HTML>
+
+--------------------- [HTTP Response muy simple (para emular servidor), 200 OK]
+
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 4
+Connection: close
+
+Hola
+
+

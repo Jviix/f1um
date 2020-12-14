@@ -1,0 +1,5 @@
+palabras88736.txt contiene solo las palabras en ascii, de 4 o mas caracteres, sin las palabras con eñe, y con los acentos y las dieresis quitadas, todo minusculas.
+
+
+
+

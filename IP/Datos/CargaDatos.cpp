@@ -30,7 +30,7 @@ void cargaDatos(int v[], int &n)
   printf("Archivo %s abierto con exito.\n",NOMBRE);
 
  n=0;
- while (fscanf(f,"%d",&v[n]==1)
+ while (fscanf(f,"%d",&v[n]==1))
   n++;
  
  printf("Datos leidos: %d \n",n);
