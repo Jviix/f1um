@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## Bienvenido al repositorio f1um
 
 You can use the [editor on GitHub](https://github.com/Jviix/test/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Estos apuntes son del primer curso del grado de ingeniería informática en la Universidad de Murcia. Cualquiera puede envíar correciones o mejoras sobre estos.
 
-### Markdown
+### Índice
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Primer cuatri:
 
-```markdown
-Syntax highlighted code block
+AMD
 
-# Header 1
-## Header 2
-### Header 3
+FC
 
-- Bulleted
-- List
+IP
 
-1. Numbered
-2. List
+GOHP
 
-**Bold** and _Italic_ and `Code` text
+FLI
 
-[Link](url) and ![Image](src)
-```
+Segundo cuatri:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+ETC
 
-### Jekyll Themes
+TP
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Jviix/test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Cálculo
 
-### Support or Contact
+Estadística 
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+FFI
